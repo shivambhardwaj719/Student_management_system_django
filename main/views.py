@@ -25,8 +25,6 @@ def adminPanel(request):
         return render(request, 'admin/admin_panel.html', data)
     else:
         return redirect('admin_login')
-
-
 def adminLogin(request):
     if request.method == 'POST':
         admin_email = request.POST['email']
